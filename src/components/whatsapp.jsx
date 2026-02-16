@@ -3,7 +3,7 @@ import { FaWhatsapp, FaInstagram, FaFacebook} from 'react-icons/fa'
 
 const Whatsapp = () => {
   return (
-    <div className='w-16 h-56 sticky bottom-[40%] left-0 pl-2 flex flex-col justify-around'>
+    <div className='hidden md:flex w-16 h-56 sticky bottom-[40%] left-0 pl-2 flex-col justify-around'>
         <a className='text-gray-300 hover:text-green-500 transition-colors duration-300'>
             <FaWhatsapp size={45} />
         </a>
