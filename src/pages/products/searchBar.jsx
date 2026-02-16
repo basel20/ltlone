@@ -19,7 +19,7 @@ const SearchBar = ({ onSearch }) => {
   };
 
   return (
-    <div className='w-[80%] h-20 bg-white  rounded-2xl  hover:rotate-0 px-8 flex items-center justify-between shadow-2xl'>
+    <div className='w-[94%] sm:w-[80%] bg-white rounded-2xl hover:rotate-0 p-6 flex flex-col sm:flex-row items-center justify-between shadow-2xl gap-4 sm:gap-2'>
       <InputPrimary
         placeholder='Search...'
         type='text'

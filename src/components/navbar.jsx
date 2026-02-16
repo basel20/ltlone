@@ -3,27 +3,29 @@ import Logo from '../assets/1.jpg'
 import Menu from './menu'
 import { FaGlobe, FaLanguage, FaAngleDown, FaAngleUp } from 'react-icons/fa'
 // import ModalList from './ModalList';
+// import { useTranslation } from 'react-i18next';
+// import '../config/i18n'; 
 
 const Navbar = ({color}) => {
 
-//   const { t, i18n } = useTranslation();
-  const [listOpen, setListOpen] = React.useState(false)
+  // const { t, i18n } = useTranslation();
+  // const [listOpen, setListOpen] = React.useState(false)
 
-    // React.useEffect(() => {
-    //   const storedLanguage = localStorage.getItem('language');
-    //   if (storedLanguage) {
-    //     i18n.changeLanguage(storedLanguage);
-    //   }
-    // }, [i18n]);
+  //   React.useEffect(() => {
+  //     const storedLanguage = localStorage.getItem('language');
+  //     if (storedLanguage) {
+  //       i18n.changeLanguage(storedLanguage);
+  //     }
+  //   }, [i18n]);
 
-//  const switchLanguage = () => {
-//     const currentLanguage = i18n.language;
-//     const newLanguage = currentLanguage === 'en' ? 'ru' : 'en';
+ const switchLanguage = () => {
+    const currentLanguage = i18n.language;
+    const newLanguage = currentLanguage === 'en' ? 'ru' : 'en';
 
-//     // Store the selected language in localStorage
-//     localStorage.setItem('language', newLanguage);
-//     i18n.changeLanguage(newLanguage);
-//   };;
+    // Store the selected language in localStorage
+    localStorage.setItem('language', newLanguage);
+    i18n.changeLanguage(newLanguage);
+  };;
 
   const handelList = () => {
     setListOpen(!listOpen)
@@ -31,14 +33,14 @@ const Navbar = ({color}) => {
 
   return (
     <div>
-      <div className='flex justify-between mx-16 items-center h-full md:hidden'>
+      <div className='flex justify-between mx-8 sm:px-20 items-center h-full md:hidden'>
             <div>
             <img alt='logo' src={Logo} height={'100%'} width={55}/>
             </div>
             <Menu color={color}/>
         </div>
 
-    <div className='h-[5.7rem] hidden md:flex justify-around items-center p-0 m-0'>
+    <div className='h-[5.7rem] hidden md:flex justify-between px-20 items-center p-0 m-0'>
       <div >
         <a href='/'>
        <img alt='logo' src={Logo} height={'100%'} width={75}/>

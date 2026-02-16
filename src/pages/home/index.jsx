@@ -7,6 +7,7 @@ import Categories from './categories'
 import Card from '../../components/card'
 import DetailsCard from '../../components/detailsCard'
 import Title from '../../components/title' 
+import Whatsapp from '../../components/whatsapp'
 
 const products = [
   {
@@ -57,9 +58,14 @@ const Home = () => {
       title: "OUR WORK IS",
       description: "DRIVE AND PASSION",
     },
+    {
+      image: img3,
+      title: "ْعلمنا هو",
+      description: "القيادة و الطموح",
+    },
   ];
   return (
-    <div>
+    <div className='relative'>
         <Slider slides={slides}/>
         <Title title={'Categories'} text={'Observe types of clothes'}/>
         <Categories />
@@ -80,6 +86,7 @@ const Home = () => {
             product={selectedProduct}
         />}
 
+        <Whatsapp />
     </div>
   )
 }

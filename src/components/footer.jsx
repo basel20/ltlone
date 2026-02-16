@@ -18,8 +18,8 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold mb-3">Quick Links</h3>
           <ul className="space-y-2 text-sm text-white/80">
-            <li className="hover:text-[#ffb700] cursor-pointer">Home</li>
-            <li className="hover:text-[#ffb700] cursor-pointer">Categories</li>
+            <li className="hover:text-[#ffb700] cursor-pointer"><a href='/'>Home</a></li>
+            {/* <li className="hover:text-[#ffb700] cursor-pointer">Categories</li> */}
             <li className="hover:text-[#ffb700] cursor-pointer">Products</li>
             <li className="hover:text-[#ffb700] cursor-pointer">Contact</li>
           </ul>

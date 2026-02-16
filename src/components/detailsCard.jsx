@@ -5,7 +5,7 @@ const DetailsCard = ({ onClose, images = [], product }) => {
 
   return (
     <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
-      <div className="h-[80vh] w-[90%] lg:w-[80%] bg-[#fff] rounded-2xl shadow-xl relative p-6 flex gap-8">
+      <div className="h-full md:h-[80vh] w-[90%] lg:w-[80%] bg-[#fff] rounded-2xl shadow-xl relative p-6 flex flex-col md:flex-row gap-8">
         {/* Close Button */}
         <button
           onClick={onClose}
@@ -20,7 +20,7 @@ const DetailsCard = ({ onClose, images = [], product }) => {
             <img
               src={images[currentIndex]}
               alt="Product"
-              className="h-[50%] object-contain rounded-3xl"
+              className="h-[70%] md:h-[50%] object-contain rounded-3xl"
             />
           ) : (
             <div className="h-[60%] w-full bg-gray-200 flex items-center justify-center rounded-lg">

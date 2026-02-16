@@ -28,11 +28,11 @@ const ProductsList = ({products, category }) => {
     <div className='w-full flex flex-col justify-center items-center py-16 gap-8'>
         <SearchBar onSearch={setFilters}/>
 
-        <p className='text-left pb-4 px-32'>
+        <p className='text-left pb-4 px-10 sm:px-32'>
         Seamless bookings, unforgettable experiences with Booky
       </p>
 
-      <div className='px-32 pb-16 flex flex-wrap justify-center gap-16'>
+      <div className='px-8 sm:px-32 pb-16 flex flex-wrap justify-center gap-16'>
         {filteredproducts.map((product, index) => ( 
             <Card
                 key={product.id}

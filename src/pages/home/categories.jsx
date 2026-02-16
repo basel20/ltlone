@@ -17,7 +17,7 @@ const CategoryCard = ({image, link}) => {
 
 const Categories = () => {
   return (
-    <div className='py-16 px-16 flex items-center justify-center'>
+    <div className='py-16 px-16 flex flex-wrap items-center justify-center'>
         <CategoryCard image={boy} link={"/products/boys"} />
         <CategoryCard image={girl} link={"/products/girls"}/>
         <CategoryCard image={baby} link={"/products/babies"}/>
