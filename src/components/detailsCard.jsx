@@ -54,8 +54,9 @@ const DetailsCard = ({ onClose, images = [], product }) => {
               {product?.description || "This is a detailed description of the product."}
             </p>
             <ul className="list-disc list-inside text-gray-600 space-y-1 mb-4">
-              <li><strong>Size:</strong> {product?.size || "100ml"}</li>
               <li><strong>Category:</strong> {product?.category || "Perfume"}</li>
+              <li><strong>Sizes:</strong> {product?.sizes.join(" ,") || "100ml"}</li>
+              <li><strong>Colors:</strong> {product?.colors.join(" ,") || "Black"}</li>
             </ul>
           </div>
           <div className="flex justify-between items-center">

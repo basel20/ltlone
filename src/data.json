@@ -1,0 +1,73 @@
+
+[
+  {
+    "id": 1,
+    "title": "Blue Winter Jacket",
+    "price": "15 000 R",
+    "description": "A warm and insulated winter jacket designed for cold weather. Features a soft inner lining, water-resistant outer layer, and a detachable hood. Perfect for school and outdoor activities.",
+    "sizes": ["XS", "S", "M", "L"],
+    "colors": ["Blue", "Pink"],
+    "images": [
+      "/images/1.jpg",
+      "/images/2.jpg",
+      "/images/3.jpg"
+    ],
+    "category": "Girls"
+  },
+  {
+    "id": 2,
+    "title": "Casual Cotton Hoodie",
+    "price": "12 000 R",
+    "description": "Comfortable everyday hoodie made from a soft cotton blend. Includes a front pocket and adjustable hood. Ideal for casual outings and cooler evenings.",
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["Gray", "Black", "Navy"],
+    "images": [
+      "/images/1.jpg",
+      "/images/2.jpg",
+      "/images/3.jpg"
+    ],
+    "category": "Boys"
+  },
+  {
+    "id": 3,
+    "title": "Sport Performance T-Shirt",
+    "price": "8 000 R",
+    "description": "Lightweight and breathable sports t-shirt made from moisture-wicking fabric. Designed for active kids and daily training sessions.",
+    "sizes": ["XS", "S", "M"],
+    "colors": ["Red", "Blue", "White"],
+    "images": [
+      "/images/1.jpg",
+      "/images/2.jpg",
+      "/images/3.jpg"
+    ],
+    "category": "Kids"
+  },
+  {
+    "id": 4,
+    "title": "Denim Jeans Classic Fit",
+    "price": "14 500 R",
+    "description": "Classic fit denim jeans made with durable stretch fabric for comfort and flexibility. Suitable for everyday wear and special occasions.",
+    "sizes": ["S", "M", "L"],
+    "colors": ["Dark Blue", "Light Blue"],
+    "images": [
+      "/images/1.jpg",
+      "/images/2.jpg",
+      "/images/3.jpg"
+    ],
+    "category": "Boys"
+  },
+  {
+    "id": 5,
+    "title": "Floral Summer Dress",
+    "price": "13 000 R",
+    "description": "Elegant floral summer dress made from lightweight breathable fabric. Perfect for parties, birthdays, and warm-weather outings.",
+    "sizes": ["XS", "S", "M", "L"],
+    "colors": ["Yellow", "White", "Pink"],
+    "images": [
+      "/images/1.jpg",
+      "/images/2.jpg",
+      "/images/3.jpg"
+    ],
+    "category": "Girls"
+  }
+]

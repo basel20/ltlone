@@ -1,14 +1,19 @@
 import React from 'react'
+import Logo from '../assets/logo.png'
 
 const Footer = () => {
   return (
-    <footer className="bg-[#184e77] text-white mt-20">
+    <footer className="bg-[#00b4d8] text-white">
       <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
         
         {/* Brand */}
         <div>
-          <h2 className="text-2xl font-bold mb-3">YourBrand</h2>
-          <p className="text-sm text-white/80">
+          <div className=' flex flex-col items-center'>
+              <a href='/'>
+                <img alt='logo' src={Logo} height={'100%'} width={150} className='bg-[#fff] p-2 rounded-xl'/>
+              </a>
+            </div>
+          <p className="py-2 text-sm text-white/80">
             Quality products made with passion and care.  
             Bringing style and confidence everywhere.
           </p>
@@ -20,8 +25,8 @@ const Footer = () => {
           <ul className="space-y-2 text-sm text-white/80">
             <li className="hover:text-[#ffb700] cursor-pointer"><a href='/'>Home</a></li>
             {/* <li className="hover:text-[#ffb700] cursor-pointer">Categories</li> */}
-            <li className="hover:text-[#ffb700] cursor-pointer">Products</li>
-            <li className="hover:text-[#ffb700] cursor-pointer">Contact</li>
+            <li className="hover:text-[#ffb700] cursor-pointer"><a>Products</a></li>
+            <li className="hover:text-[#ffb700] cursor-pointer"><a>Contact</a></li>
           </ul>
         </div>
 
